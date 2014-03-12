@@ -6,23 +6,23 @@
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
-    %div.navbar.navbar-fixed-top
-      %div.container
-        %div.navbar-header
-          %button{:type => "button", :class => "navbar-toggle"}
-            %span.sr-only Toggle navgation
+    .navbar{role: "navigation"}
+      .container
+        .navbar-header
+          %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", type: "button"}
+            %span.sr-only Toggle navigation
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.navbar-brand{href: "/"} BDS
-        %div.collapse.navbar-collapse
+          %a.navbar-brand{href: "#"} BDS ENSIIE
+        .collapse.navbar-collapse
           %ul.nav.navbar-nav
-            %li
+            %li.active
               %a{href: "/"} Home
             %li
-              = link_to 'Events', '/calendar'
+              %a{href: "/calendar"} Events
             %li
-              %a{href: "#"} Contact
+              %a{href: "/team"} Team
           %ul.nav.navbar-nav.navbar-right
             - if user_signed_in?
               %li= link_to 'Edit profile', edit_user_registration_path
@@ -32,10 +32,10 @@
               %li= link_to "Sign up", new_user_registration_path
               %li |
               %li= link_to "Login", new_user_session_path
-      %div.container
-        - if notice
-          %div.alert.alert-success.alert-dismissable= notice
-        - if alert
-          %div.alert.alert-danger.alert-dismissable= alert
-      %div.container
-        = yield
+    .container
+      - if notice
+        %div.alert.alert-success.alert-dismissable= notice
+      - if alert
+        %div.alert.alert-danger.alert-dismissable= alert
+    .container
+      = yield
