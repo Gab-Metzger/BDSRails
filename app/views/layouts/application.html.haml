@@ -1,0 +1,41 @@
+!!!
+%html
+  %head
+    %title BDSRailsCal
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  %body
+    %div.navbar.navbar-fixed-top
+      %div.container
+        %div.navbar-header
+          %button{:type => "button", :class => "navbar-toggle"}
+            %span.sr-only Toggle navgation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand{href: "/"} BDS
+        %div.collapse.navbar-collapse
+          %ul.nav.navbar-nav
+            %li
+              %a{href: "/"} Home
+            %li
+              = link_to 'Events', '/calendar'
+            %li
+              %a{href: "#"} Contact
+          %ul.nav.navbar-nav.navbar-right
+            - if user_signed_in?
+              %li= link_to 'Edit profile', edit_user_registration_path
+              %li |
+              %li= link_to "Logout", destroy_user_session_path, method: :delete
+            - else
+              %li= link_to "Sign up", new_user_registration_path
+              %li |
+              %li= link_to "Login", new_user_session_path
+      %div.container
+        - if notice
+          %div.alert.alert-success.alert-dismissable= notice
+        - if alert
+          %div.alert.alert-danger.alert-dismissable= alert
+      %div.container
+        = yield
