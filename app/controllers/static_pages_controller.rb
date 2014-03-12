@@ -7,4 +7,7 @@ class StaticPagesController < ApplicationController
   @test = false
   end
   
+  def team
+
+  end
 end

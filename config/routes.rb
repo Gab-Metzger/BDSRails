@@ -4,6 +4,7 @@ BDSRailsCal::Application.routes.draw do
 
   get "static_pages/index"
   get "/calendar" => "static_pages#calendar"
+  get "/team" => "static_pages#team"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
