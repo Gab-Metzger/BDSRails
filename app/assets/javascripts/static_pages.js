@@ -143,6 +143,7 @@ $(document).ready(function () {
    eventResize:update_function,
    eventClick:click_in_event,
    eventRender: function(event, element) {
+            element.find('.fc-event-title').append("<br/><strong>Lieu : </strong>" + event.location);
             element.bind('dblclick', function() {
                 $.ajax({
                     url:'events/' + event._id + '/edit.js', // prb d'url à modifier
