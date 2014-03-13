@@ -45,6 +45,7 @@ $(document).ready(function () {
             data:{
                 event:{// re-use event's data
                     title:event.title,
+                    location:event.location,
                     start:event.start,
                     end:event.end,
                     allDay:event.allDay
