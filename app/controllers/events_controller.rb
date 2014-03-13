@@ -37,7 +37,7 @@ class EventsController < ApplicationController
       format.html # edit.html.erb
       format.js
     end
-  end
+   end
 
   # POST /events
   # POST /events.json
@@ -87,6 +87,6 @@ class EventsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
-      params.require(:event).permit(:title, :allDay, :start, :end, :editable)
+      params.require(:event).permit(:title, :location, :allDay, :start, :end, :editable)
     end
 end
