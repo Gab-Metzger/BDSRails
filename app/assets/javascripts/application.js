@@ -15,5 +15,5 @@
 //= require jquery.ui.all
 //= require fullcalendar16
 //= require bootstrap.min
-//= require turbolinks
+//= require tinymce-jquery
 //= require_tree .

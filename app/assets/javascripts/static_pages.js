@@ -123,7 +123,7 @@ $(document).ready(function () {
       center:'title',
       right:'month,agendaWeek,agendaDay'
    },
-   editable: true,
+   editable: $("body").hasClass("connected"),
    selectable:true,
    events: 'events.json',
    selectHelper:true,

@@ -1,0 +1,11 @@
+%h1 Editer actualité
+= form_for @post  do |f|
+  = f.text_field :title
+  %br
+  = f.text_field :author
+  %br
+  = f.text_area :body
+  %br
+  = f.submit "Envoyer"
+
+= link_to 'Revenir en arrière', :back

@@ -1,0 +1,13 @@
+%h1 Nouvelle actualité
+= form_for @post do |f|
+  = f.text_field :title
+  %br
+  = f.text_field :author
+  %br
+  = f.text_area :body, :class => "tinymce", :rows => 10, :cols => 30
+  %br
+  = f.submit "Envoyer"
+
+= tinymce
+%br
+= link_to 'Retour à la liste des actualités', '/posts'
