@@ -1,4 +1,8 @@
 BDSRailsCal::Application.routes.draw do
+  resources :galleries do
+    resources :photos
+  end
+
   get "posts/index"
   get "posts/show"
   devise_for :users

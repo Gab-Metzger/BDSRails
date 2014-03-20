@@ -16,4 +16,5 @@
 //= require fullcalendar16
 //= require bootstrap.min
 //= require tinymce-jquery
+//= require bootstrap-image-gallery.min.js
 //= require_tree .

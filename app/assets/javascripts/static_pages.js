@@ -123,8 +123,8 @@ $(document).ready(function () {
       center:'title',
       right:'month,agendaWeek,agendaDay'
    },
-   editable: $("body").hasClass("connected"),
-   selectable:true,
+   editable:$("div").hasClass("connected"),
+   selectable:$("div").hasClass("connected"),
    events: 'events.json',
    selectHelper:true,
    select:function (start, end, allDay) { //création d'un évenement

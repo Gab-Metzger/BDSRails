@@ -1,0 +1,9 @@
+%h3 Nouvelle gallerie
+= form_for @gallery do |f|
+  %p
+    = f.label :name
+    %br/
+    = f.text_field :name
+  %p= f.submit
+%br
+= link_to "Galleries", galleries_path

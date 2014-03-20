@@ -1,5 +1,5 @@
 %h3= @post.title
 %em Posté le #{@post.created_at} par #{@post.author}
-%p= @post.body
+%p= @post.body.html_safe
 %br
 = link_to "Revenir en arrière", :back

@@ -40,6 +40,14 @@ gem 'tinymce-rails'
 
 gem 'will_paginate'
 
+gem "mini_magick"
+gem "carrierwave"
+
+group :development, :test do
+  gem 'pry-rails'
+  gem 'better_errors'
+end
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

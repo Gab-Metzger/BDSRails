@@ -1,0 +1,13 @@
+%h3 Nouvelle photo
+= form_for @photo, url: {action: "create"}, :html => {:multipart => true} do |f|
+  = f.hidden_field :gallery_id
+  %p
+    = f.label :title
+    %br/
+    = f.text_field :title
+  %p
+    = f.file_field :image
+  %p
+    = f.label :remote_image_url, "or image URL"
+    = f.text_field :remote_image_url
+  %p= f.submit

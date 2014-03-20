@@ -1,7 +1,7 @@
 - @posts.each do |post|
   %h3= post.title
   %em Posté le #{post.created_at} par #{post.author}
-  %p= post.body.truncate(50)
+  %p= post.body.truncate(50).html_safe
   = link_to "Lire la suite", post
 
 = will_paginate
