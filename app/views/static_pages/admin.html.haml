@@ -19,9 +19,18 @@
                 %td= post.id
                 %td= post.title
                 %td
-                  %a.btn.btn-large{href: "#"}
-                    %i.icon-edit
-                    Editer 
+                  %a.btn.btn-default{href: "/posts/#{post.id}"}
+                    %i.glyphicon.glyphicon-eye-open
+                    Voir
+                  %a.btn.btn-default{href: "/posts/#{post.id}/edit"}
+                    %i.glyphicon.glyphicon-edit
+                    Editer
+                  %a.btn.btn-default{href: "/posts/#{post.id}", "data-method"=>"delete"}
+                    %i.glyphicon.glyphicon-remove
+                    Supprimer
+        %a.btn.btn-default.btn-lg{href: "/posts/new"}
+          %i.glyphicon.glyphicon-file
+          Nouvelle Actualité
   .panel.panel-default
     .panel-heading
       %h4.panel-title
@@ -32,10 +41,27 @@
         %table.table.table-hover
           %thead
             %tr
+              %th Id
               %th Titre
-              %th Modifier
-              %th Supprimer
+              %th Actions
           %tbody
+            - @galleries.each do |gallery|
+              %tr
+                %td= gallery.id
+                %td= gallery.name
+                %td
+                  %a.btn.btn-default{href: "/galleries/#{gallery.id}"}
+                    %i.glyphicon.glyphicon-eye-open
+                    Voir
+                  %a.btn.btn-default{href: "/galleries/#{gallery.id}/edit"}
+                    %i.glyphicon.glyphicon-edit
+                    Editer
+                  %a.btn.btn-default{href: "/galleries/#{gallery.id}", "data-method"=>"delete"}
+                    %i.glyphicon.glyphicon-remove
+                    Supprimer
+        %a.btn.btn-default.btn-lg{href: "/galleries/new"}
+          %i.glyphicon.glyphicon-file
+          Nouvelle Gallerie 
   .panel.panel-default
     .panel-heading
       %h4.panel-title
