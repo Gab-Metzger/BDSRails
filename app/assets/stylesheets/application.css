@@ -13,7 +13,7 @@
  *= require fullcalendar.print
  *= require jquery.ui.all
  *= require bootstrap-image-gallery.min.css
+ *= require bootstrap
  *= require_tree .
  */
-@import "bootstrap";
-@import "bootstrap/theme";
+

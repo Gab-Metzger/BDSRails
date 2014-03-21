@@ -6,8 +6,6 @@ gem 'rails', '4.0.3'
 # Use postgresql as the database for Active Record
 gem 'pg'
 
-# Attachment_fu for uploading file to image gallery
-gem 'pothoven-attachment_fu'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
