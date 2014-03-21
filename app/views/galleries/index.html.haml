@@ -2,6 +2,6 @@
   - @galleries.each do |gallery|
     .col-xs-6.col-md-3
       %a.thumbnail{href: "/galleries/#{gallery.id}/photos"}
-        %img{alt: "#{gallery.name}", "data-src" => "holder.js/100%x180"}/
+        = image_tag gallery.cover
         .caption
           %h3= gallery.name

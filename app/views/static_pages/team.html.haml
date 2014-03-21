@@ -1,32 +1,55 @@
-%h1 La team !
-%ul.media-list
-  %li.media
-    %a.pull-left{href: "#"}
-      %img.media-object{alt: "CH", src: "/images/Corentin_Houet.jpeg"}
-    .media-body
-      %h4.media-heading Corentin Houet - Président
-      %p Voilà
-  %li.media
-    %a.pull-left{href: "#"}
-      %img.media-object{alt: "MA", src: ""}
-    .media-body
-      %h4.media-heading Mebarek Agag - Trésorier
-      %p Voilà
-  %li.media
-    %a.pull-left{href: "#"}
+%h1 L'équipe
+%br
+.row
+  .col-xs-6.col-md-3
+    %button.btn.btn-default{"data-container"=>"body","data-content"=>"Truc random","data-placement"=>"bottom","data-toggle"=>"popover","data-original-title"=>"Corentin Houet - Président",type:"button"}
+      %img{href:"/images/Corentin_Houet.jpeg",alt: "CH", src: "/images/Corentin_Houet.jpeg"}
+  .col-xs-6.col-md-3
+    %button.btn.btn-default{"data-container"=>"body","data-content"=>"Esclave du président","data-placement"=>"bottom","data-toggle"=>"popover","data-original-title"=>"Gabriel Metzger - Respo Com",type:"button"}
       %img.media-object{alt: "GM", src: "/images/Gabriel_Metzger.jpeg"}
-    .media-body
-      %h4.media-heading Gabriel Metzger - Respo Com
-      %p Voilà
-  %li.media
-    %a.pull-left{href: "#"}
-      %img.media-object{alt: "PLN", src: "/images/Pierre-Louis_Nack.jpeg"}
-    .media-body
-      %h4.media-heading Pierre-Louis Nack - Respo Com
-      %p Voilà
-  %li.media
-    %a.pull-left{href: "#"}
-      %img.media-object{alt: "BS", src: "/images/Barthelemy_Saugrain.jpeg"}
-    .media-body
-      %h4.media-heading Barthelemy Saugrain - Gestionnaire logistique
-      %p Voilà
+  .col-xs-6.col-md-3
+    %button.btn.btn-default{"data-container"=>"body","data-content"=>"Fan de B2O","data-placement"=>"bottom","data-toggle"=>"popover","data-original-title"=>"Pierre-Louis Nack - Respo Com",type:"button"}
+      %img.media-object{alt: "GM", src: "/images/Pierre-Louis_Nack.jpeg"}
+  .col-xs-6.col-md-3
+    %button.btn.btn-default{"data-container"=>"body","data-content"=>"Surveillant des ballons","data-placement"=>"bottom","data-toggle"=>"popover","data-original-title"=>"Barthelemy Saugrain - Respo logistique",type:"button"}
+      %img.media-object{alt: "GM", src: "/images/Barthelemy_Saugrain.jpeg"}
+.clear
+%br
+.row
+  .col-xs-6.col-md-3
+    %button.btn.btn-default{"data-container"=>"body","data-content"=>"test","data-placement"=>"bottom","data-toggle"=>"popover",type:"button"}
+      %img.media-object{alt: "GM", src: "/images/Gabriel_Metzger.jpeg"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/ %ul.media-list
+/   %li.media
+/     %a.pull-left{href: "#"}
+/       #Corentin
+/         %img.media-object{href:"/images/Corentin_Houet.jpeg",alt: "CH", src: "/images/Corentin_Houet.jpeg"}
+/   %li.media
+/     %a.pull-left{href: "#"}
+/       #Gab
+/         %img.media-object{alt: "GM", src: "/images/Gabriel_Metzger.jpeg"}
+/   %li.media
+/     %a.pull-left{href: "#"}
+/       #PL
+/         %img.media-object{alt: "PLN", src: "/images/Pierre-Louis_Nack.jpeg"}
+/   %li.media
+/     %a.pull-left{href: "#"}
+/       #Bart
+/       %img.media-object{alt: "BS", src: "/images/Barthelemy_Saugrain.jpeg"}
