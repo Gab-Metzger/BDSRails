@@ -1,0 +1,52 @@
+%h1 Administration
+#accordion.panel-group
+  .panel.panel-default
+    .panel-heading
+      %h4.panel-title
+        %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapseOne"}
+          Actualités
+    #collapseOne.panel-collapse.collapse.in
+      .panel-body
+        %table.table.table-hover
+          %thead
+            %tr
+              %th Id
+              %th Titre
+              %th Actions
+          %tbody
+            - @posts.each do |post|
+              %tr
+                %td= post.id
+                %td= post.title
+                %td
+                  %a.btn.btn-large{href: "#"}
+                    %i.icon-edit
+                    Editer 
+  .panel.panel-default
+    .panel-heading
+      %h4.panel-title
+        %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapseTwo"}
+          Galleries
+    #collapseTwo.panel-collapse.collapse
+      .panel-body
+        %table.table.table-hover
+          %thead
+            %tr
+              %th Titre
+              %th Modifier
+              %th Supprimer
+          %tbody
+  .panel.panel-default
+    .panel-heading
+      %h4.panel-title
+        %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapseThree"}
+          Photos
+    #collapseThree.panel-collapse.collapse
+      .panel-body
+        %table.table.table-hover
+          %thead
+            %tr
+              %th Titre
+              %th Modifier
+              %th Supprimer
+          %tbody

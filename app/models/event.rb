@@ -1,5 +1,7 @@
 class Event < ActiveRecord::Base
 
+  validates_datetime :start, :on => :create, :on_or_after => lambda {Time.current}
+
 	scope :between, lambda { |start_time, end_time|
     	{:conditions => ["start > ? and start < ?", Event.format_date(start_time), Event.format_date(end_time)]}
 	}

@@ -15,3 +15,5 @@
  *= require bootstrap-image-gallery.min.css
  *= require_tree .
  */
+@import "bootstrap";
+@import "bootstrap/theme";

@@ -10,4 +10,10 @@ class StaticPagesController < ApplicationController
   def team
 
   end
+
+  def admin
+    @galleries = Gallery.all
+    @posts = Post.all
+    @photos = Photo.all
+  end
 end

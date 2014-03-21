@@ -42,6 +42,8 @@ gem 'will_paginate'
 
 gem "mini_magick"
 gem "carrierwave"
+gem 'validates_timeliness'
+gem 'bootstrap-sass'
 
 group :development, :test do
   gem 'pry-rails'
