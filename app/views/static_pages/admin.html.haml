@@ -72,7 +72,24 @@
         %table.table.table-hover
           %thead
             %tr
+              %th Id
               %th Titre
-              %th Modifier
-              %th Supprimer
+              %th Action
           %tbody
+            - @photos.each do |photo|
+              %tr
+                %td= photo.id
+                %td= photo.title
+                %td
+                  %a.btn.btn-default{href: "/galleries/#{photo.gallery_id}/photos/"}
+                    %i.glyphicon.glyphicon-eye-open
+                    Voir
+                  %a.btn.btn-default{href: "/galleries/#{photo.gallery_id}/photos/#{photo.id}/edit"}
+                    %i.glyphicon.glyphicon-edit
+                    Editer
+                  %a.btn.btn-default{href: "/galleries/#{photo.gallery_id}/photos/#{photo.id}", "data-method"=>"delete"}
+                    %i.glyphicon.glyphicon-remove
+                    Supprimer
+        %a.btn.btn-default.btn-lg{href: "#"}
+          %i.glyphicon.glyphicon-file
+          Ajouter une nouvelle photo 

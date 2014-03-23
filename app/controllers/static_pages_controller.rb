@@ -1,10 +1,11 @@
 class StaticPagesController < ApplicationController
-  
+  before_filter :authenticate_user!, :except => [:index, :calendar, :team]
+
   def index
   end  
   
   def calendar
-  @test = false
+    @test = false
   end
   
   def team
