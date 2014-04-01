@@ -30,9 +30,27 @@ h2.jum{
 	text-align: center;
 }
 
+button.btn.btn-primary{
+	background-image: linear-gradient(to bottom, #D1D1D1 0%, #3F3F3F 100%);
+	border-color: rgb(129, 128, 128);
+}
+
+button.btn-primary:hover, button.btn-primary:focus {
+background-color: #3F3F3F;
+}
+
+a:hover {
+color: black;
+background-color: none;}
+
+a:hover, a:focus {
+text-decoration: underline;
+}
+
 $navbar-default-bg: #6F6F6F;
 $navbar-default-link-color: #E2DFDF;
 $navbar-default-link-active-color: #2C2C2C;
+
 
 @import "bootstrap";
 @import "bootstrap/theme";

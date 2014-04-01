@@ -1,8 +1,12 @@
-%h3 Galerie photo
 .row
-  - @galleries.each do |gallery|
-    .col-xs-6.col-md-3
-      %a.thumbnail{href: "/galleries/#{gallery.id}/photos"}
-        = image_tag gallery.cover
-        .caption
-          %h3= gallery.name
+.col-md-1
+.col-md-11
+	%h1 Galerie photo
+	%br
+	%p Retrouvez les photos des différents évènements !
+	%br
+	.row
+		- @galleries.each do |gallery|
+			.col-xs-6.col-md-3
+				%a{href: "/galleries/#{gallery.id}/photos"}
+					%button.btn.btn-default.btn-lg{type: "button"}= gallery.name
