@@ -1,13 +1,13 @@
 class StaticPagesController < ApplicationController
-  before_filter :authenticate_user!, :except => [:index, :calendar, :team]
+  before_filter :authenticate_user!, :except => [:index, :calendar, :team, :HoF]
 
   def index
-  end  
-  
+  end
+
   def calendar
     @test = false
   end
-  
+
   def team
 
   end
@@ -16,5 +16,9 @@ class StaticPagesController < ApplicationController
     @galleries = Gallery.all
     @posts = Post.all
     @photos = Photo.all
+  end
+
+  def HoF
+
   end
 end
