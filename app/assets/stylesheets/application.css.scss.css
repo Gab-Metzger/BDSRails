@@ -15,5 +15,24 @@
  *= require bootstrap-image-gallery.min.css
  *= require_tree .
  */
+div.jumbotron{
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;}
+
+img.logo {
+	max-width: 60%;
+	height: auto;
+	opacity: 0.8
+}
+
+h2.jum{
+	text-align: center;
+}
+
+$navbar-default-bg: #6F6F6F;
+$navbar-default-link-color: #E2DFDF;
+$navbar-default-link-active-color: #2C2C2C;
+
 @import "bootstrap";
 @import "bootstrap/theme";

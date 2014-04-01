@@ -19,8 +19,8 @@ development:
   encoding: unicode
   database: BDSRailsCal_development
   pool: 5
-  username: gabrielmetzger
-  password:
+  username: Rails
+  password: rails
   host: localhost
 
   # Connect on a TCP socket. Omitted by default since the client uses a
