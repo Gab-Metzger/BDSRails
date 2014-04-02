@@ -18,7 +18,8 @@
 div.jumbotron{
 	margin-bottom: 0px;
 	padding-top: 0px;
-	padding-bottom: 0px;}
+	padding-bottom: 0px;
+	background-color: white;}
 
 img.logo {
 	max-width: 60%;
@@ -45,6 +46,19 @@ background-color: none;}
 
 a:hover, a:focus {
 text-decoration: underline;
+}
+
+.footer{
+	color: white;
+	height: 150px;
+	margin-top: 50px;
+	background-image: linear-gradient(to bottom, #898989 0%, #6f6f6f 100%);
+	width: 100%
+
+}
+
+body{
+	width:100%;
 }
 
 $navbar-default-bg: #6F6F6F;
