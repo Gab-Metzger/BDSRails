@@ -15,11 +15,16 @@
  *= require bootstrap-image-gallery.min.css
  *= require_tree .
  */
+
+body{
+	background-color: #A9C0E2;
+}
+
 div.jumbotron{
 	margin-bottom: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	background-color: white;}
+	background-color: #E7EEF8;}
 
 img.logo {
 	max-width: 60%;
@@ -57,9 +62,7 @@ text-decoration: underline;
 
 }
 
-body{
-	width:100%;
-}
+
 
 $navbar-default-bg: #6F6F6F;
 $navbar-default-link-color: #E2DFDF;
