@@ -17,14 +17,14 @@
  */
 
 body{
-	background-color: #A9C0E2;
+	background-color: #eeeee6;
 }
 
 div.jumbotron{
 	margin-bottom: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	background-color: #E7EEF8;}
+	background-color: #eeeee6;}
 
 img.logo {
 	max-width: 60%;
@@ -54,10 +54,10 @@ text-decoration: underline;
 }
 
 .footer{
-	color: white;
+  border-top : 1px solid black;
 	height: 150px;
 	margin-top: 50px;
-	background-image: linear-gradient(to bottom, #898989 0%, #6f6f6f 100%);
+	background-color: #eeeee6;
 	width: 100%
 
 }
