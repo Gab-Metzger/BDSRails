@@ -5,5 +5,4 @@ CarrierWave.configure do |config|
   config.ftp_passwd = "secret"
   config.ftp_folder = "/image_bds"
   config.ftp_url = "http://example.com/uploads"
-  config.passive = false # false by default
 end

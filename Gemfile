@@ -43,6 +43,8 @@ gem "carrierwave"
 gem 'validates_timeliness'
 gem 'bootstrap-sass'
 
+gem 'carrierwave-ftp', :require => 'carrierwave/storage/ftp' # FTP only
+
 group :development, :test do
   gem 'pry-rails'
   gem 'better_errors'
