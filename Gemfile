@@ -42,8 +42,7 @@ gem "mini_magick"
 gem "carrierwave"
 gem 'validates_timeliness'
 gem 'bootstrap-sass'
-
-gem 'carrierwave-ftp', :require => 'carrierwave/storage/ftp' # FTP only
+gem 'rails-gallery'
 
 group :development, :test do
   gem 'pry-rails'

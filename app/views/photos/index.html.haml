@@ -1,36 +1,7 @@
-%link{href: "http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css", rel: "stylesheet"}/
-%link{href: "http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css", rel: "stylesheet"}/
-/ The Bootstrap Image Gallery lightbox, should be a child element of the document body
-#blueimp-gallery.blueimp-gallery
-  / The container for the modal slides
-  .slides
-  / Controls for the borderless lightbox
-  %h3.title
-  %a.prev ‹
-  %a.next ›
-  %a.close ×
-  %a.play-pause
-  %ol.indicator
-  / The modal dialog, which will be used to wrap the lightbox content
-  .modal.fade
-    .modal-dialog
-      .modal-content
-        .modal-header
-          %button.close{"aria-hidden" => "true", type: "button"} ×
-          %h4.modal-title
-        .modal-body.next
-        .modal-footer
-          %button.btn.btn-default.pull-left.prev{type: "button"}
-            %i.glyphicon.glyphicon-chevron-left
-            Previous
-          %button.btn.btn-primary.next{type: "button"}
-            Next
-            %i.glyphicon.glyphicon-chevron-right
-#links
-  - @photos.each do |photo|
-    %a{"data-gallery" => "", href: "#{photo.image}", title: "#{photo.title}"}
-      = image_tag photo.image_url(:thumb).to_s
-=link_to "Retour aux galleries", galleries_path
-
-%script{src: "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
-%script{src: "http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"}
+.row
+  .col-md-12
+    #myGallery
+      - @photos.each do |photo|
+        %a{"data-gallery" => "", href: "#{photo.image}", title: "#{photo.title}"}
+          = image_tag photo.image_url(:thumb).to_s
+    =link_to "Retour aux galleries", galleries_path

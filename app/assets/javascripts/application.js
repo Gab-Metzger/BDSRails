@@ -15,12 +15,5 @@
 //= require jquery.ui.all
 //= require fullcalendar16
 //= require tinymce-jquery
-//= require bootstrap-image-gallery.min.js
 //= require bootstrap
 //= require_tree .
-
-$(document).ready(function(){
-  $(".alert").alert();
-});
-
-
