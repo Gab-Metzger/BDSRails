@@ -17,14 +17,16 @@
  */
 
 body{
-	background-color: #eeeee6;
+	background-color: #FFECDB;
+	color: white;
 }
 
 div.jumbotron{
 	margin-bottom: 0px;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	background-color: #eeeee6;}
+	background-color: #F3F5C8;
+	color: 081472;}
 
 img.logo {
 	max-width: 60%;
@@ -37,12 +39,12 @@ h2.jum{
 }
 
 button.btn.btn-primary{
-	background-image: linear-gradient(to bottom, #D1D1D1 0%, #3F3F3F 100%);
+	background-image: linear-gradient(to bottom, #BFC8DF 0%, #8499D2 100%);
 	border-color: rgb(129, 128, 128);
 }
 
 button.btn-primary:hover, button.btn-primary:focus {
-background-color: #3F3F3F;
+background-color: #8499D2;
 }
 
 a:hover {
@@ -57,16 +59,16 @@ text-decoration: underline;
   border-top : 1px solid black;
 	height: 150px;
 	margin-top: 50px;
-	background-color: #eeeee6;
+	background-color: #F3F5C8;
 	width: 100%
 
 }
 
 
 
-$navbar-default-bg: #6F6F6F;
-$navbar-default-link-color: #E2DFDF;
-$navbar-default-link-active-color: #2C2C2C;
+$navbar-default-bg: #BFC8DF;
+$navbar-default-link-color: #8499D2;
+$navbar-default-link-active-color: #BFC8DF;
 
 
 @import "bootstrap";

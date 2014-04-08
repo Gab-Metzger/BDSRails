@@ -19,6 +19,8 @@ development:
   encoding: unicode
   database: BDSRailsCal_development
   pool: 5
+  username: Rails
+  password: rails
   host: localhost
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -47,13 +49,13 @@ test:
   encoding: unicode
   database: BDSRailsCal_test
   pool: 5
-  username: BDSRailsCal
-  password:
+  username: Rails
+  password: rails
 
 production:
   adapter: postgresql
   encoding: unicode
   database: BDSRailsCal_production
   pool: 5
-  username: BDSRailsCal
-  password:
+  username: Rails
+  password: rails
