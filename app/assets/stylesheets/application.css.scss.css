@@ -21,7 +21,7 @@ body{
   	font-size: 15px;
   	line-height: 1.42857143;
 	background-color: #FFECDB;
-	color: white;
+	color: black;
 }
 
 div.jumbotron{
@@ -35,7 +35,7 @@ div.jumbotron{
 	color:black;}
 
 img.logo {
-	max-width: 90%;
+	max-width: 70%;
 	height: auto;
 	opacity: 0.8
 }
@@ -77,7 +77,7 @@ text-decoration: underline;
 }
 
 .barsep{
-	border-top : 1px solid #bf5a16;
+	border-top : 2px solid #bf5a16;
 	margin-right: 30px;
 	margin-left: 30px 
 }
