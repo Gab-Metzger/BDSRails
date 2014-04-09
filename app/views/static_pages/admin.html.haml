@@ -2,7 +2,7 @@
 #accordion.panel-group
   .panel.panel-default
     .panel-heading
-      %h4.panel-title
+      %p.panel-title
         %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapseOne"}
           Actualités
     #collapseOne.panel-collapse.collapse.in
@@ -33,7 +33,7 @@
           Nouvelle Actualité
   .panel.panel-default
     .panel-heading
-      %h4.panel-title
+      %p.panel-title
         %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapseTwo"}
           Galleries
     #collapseTwo.panel-collapse.collapse
@@ -61,10 +61,10 @@
                     Supprimer
         %a.btn.btn-default.btn-lg{href: "/galleries/new"}
           %i.glyphicon.glyphicon-file
-          Nouvelle Gallerie 
+          Nouvelle Gallerie
   .panel.panel-default
     .panel-heading
-      %h4.panel-title
+      %p.panel-title
         %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapseThree"}
           Photos
     #collapseThree.panel-collapse.collapse
@@ -92,4 +92,4 @@
                     Supprimer
         %a.btn.btn-default.btn-lg{href: "#"}
           %i.glyphicon.glyphicon-file
-          Ajouter une nouvelle photo 
+          Ajouter une nouvelle photo

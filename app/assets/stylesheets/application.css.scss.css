@@ -79,7 +79,7 @@ text-decoration: underline;
 .barsep{
 	border-top : 2px solid #bf5a16;
 	margin-right: 30px;
-	margin-left: 30px 
+	margin-left: 30px
 }
 .navbar-default{
 	margin-left: 30px;
@@ -95,11 +95,22 @@ a.btn.btn-default:hover{
 	background-color: #2b3e50;
 }
 
-h4.panel-title, div.panel-heading{
+p.panel-title, div.panel-heading{
 	background-color: #df691a;
 	color: white;
 	padding: 0px;
 }
+
+p.panel-title {
+  height: 40px;
+}
+
+p.panel-title a{
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
 $navbar-default-bg: #bf5a16;
 $navbar-default-link-color: #c85e17;
 $navbar-default-link-active-color: #bf5a16;
