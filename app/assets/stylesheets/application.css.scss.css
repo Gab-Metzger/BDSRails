@@ -86,6 +86,16 @@ text-decoration: underline;
 	margin-right: 30px;
 }
 
+a.btn.btn-default{
+	background-color: rgb(63, 57, 82);
+}
+
+
+h4.panel-title, div.panel-heading{
+	background-color: #df691a;
+	color: white;
+	padding: 0px;
+}
 $navbar-default-bg: #bf5a16;
 $navbar-default-link-color: #c85e17;
 $navbar-default-link-active-color: #bf5a16;

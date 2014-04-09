@@ -5942,10 +5942,10 @@ label,
 .panel {
   border: none;
 }
-.panel-default > .panel-heading {
+/*.panel-default > .panel-heading {
   background-color: #485563;
   color: #ebebeb;
-}
+}*/
 .thumbnail {
   background-color: #4e5d6c;
   border: none;
