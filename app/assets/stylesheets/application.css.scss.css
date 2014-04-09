@@ -88,8 +88,12 @@ text-decoration: underline;
 
 a.btn.btn-default{
 	background-color: rgb(63, 57, 82);
+	text-decoration: none;
 }
 
+a.btn.btn-default:hover{
+	background-color: #2b3e50;
+}
 
 h4.panel-title, div.panel-heading{
 	background-color: #df691a;
