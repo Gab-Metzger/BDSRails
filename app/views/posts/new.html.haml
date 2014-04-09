@@ -1,9 +1,13 @@
 %h1 Nouvelle actualité
 = form_for @post do |f|
-  = f.text_field :title
-  %br
-  = f.text_field :author
-  %br
+  .form-group
+    = f.label "Titre"
+    %br
+    = f.text_field :title, :autofocus => true, :class => "form-control"
+  .form-group
+    = f.label "Auteur"
+    %br
+    = f.text_field :author, :class => "form-control"
   = f.text_area :body, :class => "tinymce", :rows => 10, :cols => 30
   %br
   = f.submit "Envoyer"

@@ -3,5 +3,5 @@
   %em Posté le #{post.created_at} par #{post.author}
   %p= post.body.truncate(50).html_safe
   = link_to "Lire la suite", post
-
-= will_paginate
+%br
+= will_paginate @collection, renderer: BootstrapPagination::Rails

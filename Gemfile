@@ -36,7 +36,7 @@ gem 'rails_12factor', group: :production
 
 gem 'tinymce-rails'
 
-gem 'will_paginate'
+gem 'will_paginate-bootstrap'
 
 gem "mini_magick"
 gem "carrierwave"
