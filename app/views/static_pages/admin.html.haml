@@ -5,7 +5,7 @@
       %p.panel-title
         %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapseOne"}
           Actualités
-    #collapseOne.panel-collapse.collapse.in
+    #collapseOne.panel-collapse.collapse
       .panel-body
         %table.table.table-hover
           %thead
@@ -90,6 +90,3 @@
                   %a.btn.btn-default{href: "/galleries/#{photo.gallery_id}/photos/#{photo.id}", "data-method"=>"delete"}
                     %i.glyphicon.glyphicon-remove
                     Supprimer
-        %a.btn.btn-default.btn-lg{href: "#"}
-          %i.glyphicon.glyphicon-file
-          Ajouter une nouvelle photo

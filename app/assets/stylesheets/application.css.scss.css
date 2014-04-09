@@ -111,6 +111,10 @@ p.panel-title a{
   left: 10px;
 }
 
+.photo-padding {
+  padding-top: 30px;
+}
+
 $navbar-default-bg: #bf5a16;
 $navbar-default-link-color: #c85e17;
 $navbar-default-link-active-color: #bf5a16;
