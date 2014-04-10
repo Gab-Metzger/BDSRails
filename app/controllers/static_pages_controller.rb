@@ -2,6 +2,9 @@ class StaticPagesController < ApplicationController
   before_filter :authenticate_user!, :except => [:index, :calendar, :team, :HoF]
 
   def index
+    @user = User.find(1)
+    @user.approved = true
+    @user.save
   end
 
   def calendar
