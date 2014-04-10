@@ -55,5 +55,4 @@ production:
   encoding: unicode
   database: BDSRailsCal_production
   pool: 5
-  username: Rails
-  password: rails
+  username: metzger2013
