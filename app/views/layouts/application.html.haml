@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title BDSRailsCal
+    %title BDS Ensiie Strasbourg
     = stylesheet_link_tag    "application", media: "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
@@ -57,13 +57,12 @@
     .footer
       .barsep
         .row
-          .col-md-1
-          .col-md-3
+          .col-md-9
             %br
-            %h2
-              BDS ENSIIE
-              %br Strasbourg
-          .col-md-4.col-md-offset-3
+            .jumbotron
+              %em
+                Site du BDS réalisé par Pierre-Louis NACK et Gabriel METZGER dans le cadre du projet de Web 2014.
+          .col-md-3
             %br
             %br
             %ul.list-inline

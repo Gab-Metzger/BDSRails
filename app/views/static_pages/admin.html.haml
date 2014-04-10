@@ -90,3 +90,28 @@
                   %a.btn.btn-default{href: "/galleries/#{photo.gallery_id}/photos/#{photo.id}", "data-method"=>"delete"}
                     %i.glyphicon.glyphicon-remove
                     Supprimer
+  .panel.panel-default
+    .panel-heading
+      %p.panel-title
+        %a{"data-parent" => "#accordion", "data-toggle" => "collapse", href: "#collapseFour"}
+          Utilisateurs
+    #collapseFour.panel-collapse.collapse
+      .panel-body
+        %table.table.table-hover
+          %thead
+            %tr
+              %th Email
+              %th Approuvé
+              %th Actions
+          %tbody
+            - @users.each do |user|
+              %tr
+                %td= user.email
+                %td= user.approved
+                %td
+                  %a.btn.btn-default{href: "/users/edit"}
+                    %i.glyphicon.glyphicon-edit
+                    Editer
+                  %a.btn.btn-default{href: "/users/#{user.id}", "data-method"=>"delete"}
+                    %i.glyphicon.glyphicon-remove
+                    Supprimer

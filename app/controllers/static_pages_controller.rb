@@ -16,6 +16,7 @@ class StaticPagesController < ApplicationController
     @galleries = Gallery.all
     @posts = Post.all
     @photos = Photo.all
+    @users = User.all
   end
 
   def HoF
