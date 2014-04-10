@@ -1,9 +1,9 @@
-%h3 Edition Gallerie 
+%h3 Edition Gallerie
 = form_for @gallery do |f|
-  %p
-    = f.label :name
-    %br/
-    = f.text_field :name
-  %p= f.submit
+  .form-group
+    = f.label "Titre"
+    %br
+    = f.text_field :name, :autofocus => true, :class => "form-control"
+  = f.submit "Editer", :class => "btn btn-default btn-lg"
 %br
-= link_to "Galleries", galleries_path
+= link_to "Revenir en arrière", :back

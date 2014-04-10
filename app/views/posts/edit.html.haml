@@ -1,11 +1,18 @@
 %h1 Editer actualité
 = form_for @post  do |f|
-  = f.text_field :title
+  .form-group
+    = f.label "Titre"
+    %br
+    = f.text_field :title, :autofocus => true, :class => "form-control"
+  .form-group
+    = f.label "Auteur"
+    %br
+    = f.text_field :author, :class => "form-control"
+  = f.text_area :body, :class => "tinymce", :rows => 10, :cols => 30
   %br
-  = f.text_field :author
-  %br
-  = f.text_area :body
-  %br
-  = f.submit "Envoyer"
+  = f.submit "Editer", :class => "btn btn-default btn-lg"
+
+= tinymce
+%br
 
 = link_to 'Revenir en arrière', :back
