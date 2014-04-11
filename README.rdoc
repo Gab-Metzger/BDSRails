@@ -1,28 +1,19 @@
-== README
+== BDS ENSIIE Strasbourg
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Site pour le BDS de l'Ensiie Strasbourg, réalisé dans le cadre du projet de Web de 1ère année.
+**Equipe** : _Gabriel METZGER et Pierre-Louis NACK_
 
-Things you may want to cover:
+= Version local du site
+Il faut tout d'abord cloner le repository
+    git clone https://github.com/Gab-Metzger/BDSRails.git BDS
 
-* Ruby version
+Il faut ensuite télécharger les gem's
+    cd BDS && bundle install
 
-* System dependencies
+**__Attention vous avez besoin de postgresql d'installé sur votre PC__**
 
-* Configuration
+Ensuite, il faut initialiser la base de donnée
+    bundle exec rake db:setup
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Pour finir, il suffit de lancer le serveur
+    bundle exec rails s    
