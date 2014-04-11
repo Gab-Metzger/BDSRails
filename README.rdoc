@@ -1,7 +1,8 @@
 == BDS ENSIIE Strasbourg
 
 Site pour le BDS de l'Ensiie Strasbourg, réalisé dans le cadre du projet de Web de 1ère année.
-**Equipe** : _Gabriel METZGER et Pierre-Louis NACK_
+
+*Equipe* : Gabriel METZGER et Pierre-Louis NACK
 
 = Version local du site
 Il faut tout d'abord cloner le repository
@@ -10,10 +11,10 @@ Il faut tout d'abord cloner le repository
 Il faut ensuite télécharger les gem's
     cd BDS && bundle install
 
-**__Attention vous avez besoin de postgresql d'installé sur votre PC__**
+*Attention vous avez besoin de PostgreSql d'installé sur votre PC*
 
 Ensuite, il faut initialiser la base de donnée
     bundle exec rake db:setup
 
 Pour finir, il suffit de lancer le serveur
-    bundle exec rails s    
+    bundle exec rails s
